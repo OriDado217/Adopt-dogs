@@ -79,3 +79,149 @@ nav a:hover {
   background-color: #e3891b; 
   
 }
+
+/* איפוס הגדרות בסיסי - כדי שהאתר יראה טוב בכל דפדפן */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* צבע רקע אפרפר בהיר ונעים */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* הגדרת "מיכל" ששומר על תוכן במרכז המסך */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- עיצוב הכותרת --- */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    position: sticky; /* נדבק ללמעלה כשגוללים */
+    top: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #3498db; /* צבע כחול במעבר עכבר */
+}
+
+/* --- עיצוב אזור הגיבור (Hero) --- */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* רקע צבעוני ויפה */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #764ba2;
+    padding: 10px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05); /* אפקט הגדלה קטן בלחיצה */
+}
+
+/* --- עיצוב הפוסטים --- */
+.blog-section {
+    padding: 50px 20px;
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* רספונסיבי - מתאים את עצמו למסך */
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.tag {
+    background-color: #e0f2f1;
+    color: #00695c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4rem;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 50px;
+}
